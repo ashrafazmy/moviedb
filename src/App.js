@@ -4,11 +4,6 @@ import axios from 'axios';
 import Results from "./components/Results";
 import Popup from "./components/Popup";
 
-//TODO: make the search button work
-//TODO: change API to TMDB (for more than 10 per api call)
-//TODO: ui changes to make it nice
-
-
 function App() {
   const [state, setState] = useState({
     s: "",

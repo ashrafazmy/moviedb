@@ -1,6 +1,6 @@
 import React from 'react'
-
-function Search({handleInput, search}) {
+function Search({handleInput, search,handleSearch}) {
+  console.log(search,'search')
   return (
     <section class="searchBox-wrap">
         <div className="search-container">
@@ -11,7 +11,8 @@ function Search({handleInput, search}) {
           onChange={handleInput}
           onKeyDown={search}
         />
-        <button onClick={search}>Enter</button>
+        
+        <button onClick={handleSearch} >Enter</button>
       </div>
     </section>
   )

@@ -12,9 +12,10 @@ function Search({handleInput, search,handleSearch}) {
           onKeyDown={search}
         />
         
-        <button onClick={handleSearch} >Enter</button>
+        {/* <button className='enter-btn' onClick={handleSearch} >Enter</button> */}
       </div>
     </section>
+    
   )
 }
 

@@ -3,12 +3,15 @@ import Search from "./components/Search";
 import axios from 'axios';
 import Results from "./components/Results";
 import Popup from "./components/Popup";
+import { BounceLoader } from 'react-spinners';
 
 function App() {
   const [state, setState] = useState({
     s: "",
     results: [],
-    selected: {}
+    selected: {},
+    loading: false,
+
   })
 
 //   const url =
@@ -93,6 +96,17 @@ function App() {
     }
   };
 
+  // useEffect(() => {
+  //   const delay = 2000;
+
+  //   const timeoutId = setTimeout(() => {
+  //     setState((prev) => ({ ...prev, loading: true }));
+  //   }, delay);
+
+  //   return () => clearTimeout(timeoutId);
+  // }, []); 
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -101,6 +115,9 @@ function App() {
       <main>
       {/* searchbar component */}
       <Search handleInput={handleInput}  search = {search}></Search>
+
+      {/* {state.loading && <BounceLoader color="#36d7b7" />} */}
+
 
       {/* results component */}
       <Results results={state.results} openPopup = {openPopup} handleSearch={handleSearch}/>

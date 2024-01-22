@@ -60,8 +60,8 @@ section {
 }
 
 
-.searchBox:focus {
-  box-shadow: 0px 0px 8px 3px #44c44d;
+.searchBox:hover {
+  box-shadow: 0px 0px 8px 3px #2c8d33;
 }
 
 .search-container {
@@ -69,19 +69,23 @@ section {
   align-items: center;
 }
 
-button {
-  /* Add any styling you want for the button here */
-  /* Example: */
+.enter-btn {
   padding: 18px;
-  background-color: #007bff;
+  background-color: #0e6bce;
   color: #fff;
   border: none;
-  cursor: pointer;
-
-
+  cursor:pointer;
   outline: none;
-
   border-radius: 8px;
+
+  color: #e2e4e6;
+  font-size: 17px;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+
+}
+button:hover {
+  box-shadow: 0px 0px 5px 2px rgb(7, 66, 244);
 }
 
 /* ----------------------------------------------- */
